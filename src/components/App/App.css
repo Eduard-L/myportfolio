@@ -1,0 +1,20 @@
+.App{
+  margin: 0;
+  width:100VW;
+  display: flex;
+  flex-direction: column;
+  
+}
+/* .app-schroll{
+  scroll-snap-type: y mandatory;
+
+}
+.app-schroll > *{
+  scroll-snap-align: start;
+} */
+
+@media screen and (max-width:768px) {
+  .App{
+    width: 100%;
+  }
+}
