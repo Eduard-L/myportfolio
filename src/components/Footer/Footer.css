@@ -1,0 +1,18 @@
+.footer{
+    width: 100%;
+    background: black
+}
+.footer__title{
+    z-index: 1;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto Slab',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #B6BCBF;
+    opacity: 0.7;
+}

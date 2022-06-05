@@ -3,7 +3,7 @@ export function PreLoader() {
     return (
 
         <div className="container">
-            <div className="cube">
+            {/* <div className="cube">
                 <div className="sides">
                     <div className="top"></div>
                     <div className="right"></div>
@@ -14,8 +14,9 @@ export function PreLoader() {
 
                 </div>
                 <h2 className='title'>Loading...</h2>
-            </div>
-
+            </div> */}
+            <span className="loader"></span>
+            <span className="loader_type_line"></span>
         </div>
     )
 }

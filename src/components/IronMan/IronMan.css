@@ -1,0 +1,111 @@
+
+.ironman{
+    position: fixed;
+    background-image: url('../../images/ironman.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 69px;
+    height: 110px;
+    max-width: 69px;
+    max-height: 110px;
+    z-index: 2;
+    margin: 0px auto;
+    bottom: 7%;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    transform: translate(-1000px, 0);
+    transition: all 2s ease;
+    animation: 2s flying linear infinite , moving 2s linear 1 ;
+    animation-delay: 15s;
+    
+    
+}
+@keyframes moving {
+    from {
+        transform:  translate(-1000px,0);
+       
+        
+    }
+    to {
+        transform:  translate(0px , 0px);
+        
+      
+    } 
+}
+@keyframes flying {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,30px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+/* .ironman__subtitle{
+
+} */
+ .ironman__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    
+    width: 210px;
+    height: 40px;
+    border-radius: 50%;
+    left:-200px;
+    top: -17%;
+    color: white;
+    /* font-weight: 700; */
+    background-color: tomato;
+    box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+   
+ }
+ 
+ .ironman_show-contact{
+     right: 0;
+     left: 80%;
+     
+ }
+ .ironman_close{
+     left: 0;
+     right:90%
+ }
+ 
+ .ironman__link{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+ }
+ .ironman__button{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100%;
+    background-color: tomato;
+    border-radius: 50%;
+    position: absolute;
+    border-radius: 50% 50% 0;
+    box-shadow: 7px 7px 12px 0px rgba(255, 61, 0, 0.5);
+    cursor: pointer;
+ }
+ .ironman__button_type_close{
+     bottom: -20px;
+     left: 5px;
+     background-image: url('../../images/icons8-close-16.png');
+     
+ }
+ .ironman__button_type_reset{
+    bottom: -20px;
+    right: 8px;
+    background-image: url('../../images/icons8-refresh-16.png');
+    
+}

@@ -2,6 +2,7 @@ import { Video } from '../Video/Video'
 import './Header.css'
 import videoSrc from '../../videos/video2.mp4'
 import { Navigation } from '../Navigation/Navigation'
+
 import { useRef } from 'react'
 
 

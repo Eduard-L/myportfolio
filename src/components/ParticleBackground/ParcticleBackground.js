@@ -2,9 +2,9 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
-export function ParcticleBackground({ children }) {
+export function ParcticleBackground({ }) {
     const particlesInit = async (main) => {
-        console.log(main);
+
 
         // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
         // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -20,7 +20,7 @@ export function ParcticleBackground({ children }) {
             <Particles
                 id="tsparticles"
                 init={particlesInit}
-                loaded={particlesLoaded}
+
                 options={{
                     background: {
                         color: {
@@ -95,7 +95,7 @@ export function ParcticleBackground({ children }) {
                     detectRetina: true,
 
                 }}
-            >{children}</Particles>
+            ></Particles>
         </>
     );
 }

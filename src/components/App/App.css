@@ -5,16 +5,16 @@
   flex-direction: column;
   
 }
-/* .app-schroll{
+ .app-schroll{
   scroll-snap-type: y mandatory;
-
+  overflow-y: scroll;
 }
-.app-schroll > *{
+.app-schroll > section{
   scroll-snap-align: start;
-} */
+} 
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
   .App{
     width: 100%;
   }
-}
+} */

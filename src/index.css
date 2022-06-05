@@ -16,7 +16,8 @@ body {
 }
 body::-webkit-scrollbar{
   width: 15px;
-  background-color: black
+  background-color: black;
+ 
 }
 body::-webkit-scrollbar-track{
   border-radius: 100vw;
