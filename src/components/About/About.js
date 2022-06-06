@@ -1,10 +1,20 @@
 import './About.css'
-import { useRef } from 'react'
+import { useRef, useEffect } from 'react'
 import imgSrc from '../../images/my_image.jpg'
-export function About({ }) {
+import { useIsInVeiwPort } from '../../utils/useIsInViewPort'
+export function About({ setIsOnViewPort }) {
     const about = useRef()
+    const { isVisible } = useIsInVeiwPort(about);
+
+    useEffect(() => {
+        setIsOnViewPort(isVisible);
+        if (isVisible) {
 
 
+
+        }
+
+    }, [isVisible])
     return (
         <section ref={about} id='about' className='about'>
 

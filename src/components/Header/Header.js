@@ -2,16 +2,40 @@ import { Video } from '../Video/Video'
 import './Header.css'
 import videoSrc from '../../videos/video2.mp4'
 import { Navigation } from '../Navigation/Navigation'
-
+import { useIsInVeiwPort } from '../../utils/useIsInViewPort'
 import { useRef } from 'react'
+import { useEffect } from 'react'
 
+export function Header({
+    isOpen,
+    setIsBurgerMenuOpen,
+    isHeaderOnViewPort,
+    setIsOnViewPort,
+    isAboutOnViewPort,
+    isContactOnViewPort,
+    isTechOnViewPort,
+    isPortfolioOnViewPort
+}) {
 
-export function Header({ isOpen, setIsBurgerMenuOpen }) {
     const header = useRef()
+    const { isVisible } = useIsInVeiwPort(header)
+
+    useEffect(() => {
+        setIsOnViewPort(isVisible)
+
+    }, [isVisible])
 
     return (
         <header ref={header} id='header' className='header'>
-            <Navigation isOpen={isOpen} setIsBurgerMenuOpen={setIsBurgerMenuOpen} />
+            <Navigation
+                isOpen={isOpen}
+                setIsBurgerMenuOpen={setIsBurgerMenuOpen}
+                isHeaderOnViewPort={isHeaderOnViewPort}
+                isAboutOnViewPort={isAboutOnViewPort}
+                isContactOnViewPort={isContactOnViewPort}
+                isTechOnViewPort={isTechOnViewPort}
+                isPortfolioOnViewPort={isPortfolioOnViewPort}
+            />
             <div className='header__content'>
                 <p className='header__title '>Welcome, I am</p>
                 <h1 className='header__title'> Eduard Loktev</h1>

@@ -23,7 +23,7 @@
     z-index: 1;
     top: 35%;
     margin-left: 3%;
-    /* text-shadow: 4px 4px black; */
+    
 }
 
 
@@ -228,25 +228,7 @@
     }
     
 }
-@media screen and (max-width:768px) {
-    /* .header__title:nth-child(2){
-        margin-top:20px;
-        font-size:60px;
-    }
-    .header__title:nth-child(3){
-        margin-top:20px;
-        font-size:30px;
-    }
-    .header__title:nth-child(1){
-        
-        font-size:30px;
-    } */
-    /* .header__subtitle{
-        font-size:40px;
-        width: 523px;
-        top:61%
-    } */
-}
+
 @media screen and (max-width:650px) {
     
    

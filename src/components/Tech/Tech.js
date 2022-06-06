@@ -1,7 +1,16 @@
 import './Tech.css';
-export function Tech({ }) {
+import { useIsInVeiwPort } from '../../utils/useIsInViewPort';
+import { useRef, useEffect } from 'react'
+export function Tech({ isOnViewPort, setIsOnViewPort }) {
+    const tech = useRef();
+    const { isVisible } = useIsInVeiwPort(tech)
+
+    useEffect(() => {
+        setIsOnViewPort(isVisible);
+
+    }, [isVisible])
     return (
-        <section className='tech'>
+        <section ref={tech} className='tech'>
             <h2 className='tech__title'>My Tech Stack</h2>
             <ul className='tech__list'>
                 <li className='tech__item tech__item_type_html'><a className='tech__link' href='https://www.w3schools.com/html/' target='_blank'></a></li>

@@ -1,5 +1,4 @@
 .portfolio{
-    /* height: 100VH; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,10 +33,7 @@
     margin-bottom: 230px;
 
 }
-/* .portfolio__list:hover{
-    
-    -webkit-mask-position: left right;
-} */
+
 .snaps-inline{
     scroll-snap-type:inline mandatory;
     scroll-padding: 40px;
@@ -108,13 +104,8 @@
     background-image: url('../../images/portland.jpg');
     background-size: 100%;
 }
-.portfolio__item_type_calculator{
-    background-image: url('../../images/calculator.jpg');
-    background-size: 95%;
-}
-/* .portfolio__item:hover{
-    opacity:0.6
-} */
+
+
 .portfolio__list::-webkit-scrollbar{
     width: 15px;
     height: 15px;
@@ -146,7 +137,7 @@
       padding: 0;
       border-radius: 50%;
       cursor: pointer;
-      top:60%;
+      top:50%;
       background-position: center;
       background-repeat: no-repeat;
       transition:background-color .3s ease-in-out, transform .5s ease-in-out;
@@ -237,12 +228,23 @@ font-size: 35px;
     width: 88%;
   
 }
+.portfolio__btn_not-visible{
+    display: none;
+}
 @media screen and (max-width:1200px) {
     .portfolio__btn_type_pre{
         left:8%;
     }
     .portfolio__btn_type_next{
         right:8%;
+    }
+    .portfolio__list{
+        grid-gap:35px;
+    }
+}
+@media screen and (min-width:1100px) {
+    .portfolio__list{
+        max-width:1100px;
     }
 }
 @media screen and (max-width:1000px) {
@@ -272,10 +274,11 @@ font-size: 35px;
         height: 30px;
         width: 30px;
         background-size: 80%;
-        top:56%
+      
     }
+    
 }
-@media screen and (max-width:500px) {
+@media screen and (max-width:530px) {
     .portfolio__title{
         font-size: 70px;
         margin-top: 70px;

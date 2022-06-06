@@ -1,5 +1,4 @@
 .contact{
-    /* height: 100VH; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -162,9 +161,7 @@
     font-family: 'Roboto Slab', sans-serif;
     font-weight: 700;
 }
-/* .contact__button:hover{
-opacity: 1;
-} */
+
 .contact__input::placeholder{
     font-family: 'Roboto Slab',sans-serif;
     font-style: normal;

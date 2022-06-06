@@ -36,8 +36,7 @@
     animation: boost 5s linear alternate;
     animation-delay: 9s;
     animation-fill-mode: forwards;
-    /* transform:translate(100px); */
-    /* animation: animloaderBack 1s linear infinite alternate; */
+    
   }
   .loader::before {
     content: "";
@@ -149,11 +148,10 @@
     font-family: 'Inter',sans-serif;
     font-weight: 700;
     color: red;
-    /* mix-blend-mode: difference; */
     animation: percentage 10s linear;
     z-index: 1;
     animation-fill-mode: forwards;
-    /* color: red; */
+    
   }
   .loader_type_line:after {
     content: "";

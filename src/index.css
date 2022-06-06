@@ -21,16 +21,21 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-track{
   border-radius: 100vw;
-  /* background-color:tomato; */
   background: linear-gradient(tomato, transparent);
   margin-block:15px;
 }
 body::-webkit-scrollbar-thumb{
-  /* background-color: black; */
   box-shadow: 1px 1px 5px 5px tomato;
   background-color: black;
   border: 2px solid tomato;
   border-radius: 100vw;
   
+}
+.main{
+  display: none;
+}
+.main_is-visible{
+  display: flex;
+  flex-direction: column;
 }
 

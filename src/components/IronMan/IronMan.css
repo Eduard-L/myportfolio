@@ -10,11 +10,11 @@
     max-width: 69px;
     max-height: 110px;
     z-index: 2;
-    margin: 0px auto;
+    /* margin: 0px auto; */
     bottom: 7%;
     cursor: pointer;
-    left: 0;
-    right: 0;
+    left: 3%;
+    /* right: 5%; */
     transform: translate(-1000px, 0);
     transition: all 2s ease;
     animation: 2s flying linear infinite , moving 2s linear 1 ;
@@ -45,23 +45,19 @@
         transform: translate(0,0);
     }
 }
-/* .ironman__subtitle{
 
-} */
  .ironman__subtitle {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     left: 50%;
-    
     width: 210px;
     height: 40px;
     border-radius: 50%;
-    left:-200px;
+    left:50px;
     top: -17%;
     color: white;
-    /* font-weight: 700; */
     background-color: tomato;
     box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
     font-family: 'Inter', sans-serif;
@@ -70,13 +66,16 @@
  }
  
  .ironman_show-contact{
-     right: 0;
-     left: 80%;
+     right: 50px;
+     left: inherit;
      
+ }
+ .ironman__subtitle_type_show-contact{
+     left:-200px;
  }
  .ironman_close{
      left: 0;
-     right:90%
+     right:3%
  }
  
  .ironman__link{

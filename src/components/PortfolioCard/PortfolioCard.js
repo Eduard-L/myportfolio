@@ -1,6 +1,8 @@
 import { useState } from "react"
 export function PortfolioCard({ btnTextCode, btnTextProject, titleText, subtitleText, type, codeLink, projectLink, children }) {
+
     const [isHover, setIsHover] = useState(false)
+
     return (
         <li onMouseLeave={() => setIsHover(false)} onMouseEnter={() => setIsHover(true)} className={`portfolio__item portfolio__item_type_${type}`}>{
             isHover &&

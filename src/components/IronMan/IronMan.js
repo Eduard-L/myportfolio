@@ -5,16 +5,18 @@ import { Link } from 'react-scroll'
 export function IronMan({ text, setText }) {
 
     const [messageCounter, setMessageCounter] = useState(0);
-    const [isIronManActivate, setIsIronManActivate] = useState(false)
-    const [sectionToNavigate, setSectionToNavigate] = useState('')
+    const [isIronManActivate, setIsIronManActivate] = useState(false);
+    const [sectionToNavigate, setSectionToNavigate] = useState('');
+
     useEffect(() => {
         setText('Click on me')
-        setTimeout(() => { setIsIronManActivate(true) }, 20000)
+        setTimeout(() => { setIsIronManActivate(true) }, 18000)
 
     }, [])
 
     const ironMan = useRef();
     const ironText = useRef();
+
     function changeMessage() {
 
         if (!isIronManActivate) {
@@ -42,25 +44,29 @@ export function IronMan({ text, setText }) {
             setSectionToNavigate('portfolio')
         }
     }
+
     function handleIronManShowContact() {
         ironMan.current.classList.add(`ironman_show-contact`)
 
     }
+
     function hanldeIronManBackMiddle() {
         ironMan.current.classList.remove(`ironman_show-contact`)
         ironText.current.classList.remove('ironman__subtitle_show-contact')
 
     }
+
     function handleIronManActive() {
         setIsIronManActivate(true);
         ironMan.current.classList.remove(`ironman_close`);
 
     }
+
     function handleCloseIronMan() {
-        // ironMan.current.classList.remove(`ironman_show-contact`);
         ironMan.current.classList.add(`ironman_close`);
         setIsIronManActivate(false)
     }
+
     function handleResetIronMan() {
         setMessageCounter(0)
         ironMan.current.classList.remove(`ironman_show-contact`);
