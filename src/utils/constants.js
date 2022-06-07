@@ -9,8 +9,13 @@ export const messages = [
     `Let's Continue`,
     'Here you can read about me',
     'I am very nice person',
-    'It is my developing stack',
+    `It's my developing stack`,
     'I always happy to learn more',
     'Here you can see my projects',
-    'Awesome projects,dont you think!?'
+    'Awesome projects,dont you think!?',
+    'Here you can send email to me',
+    'Share your thoughts with me',
+    'Thank you , best regards!',
+    'Restart? Click the button below'
+
 ]

@@ -36,13 +36,14 @@ export function Header({
                 isTechOnViewPort={isTechOnViewPort}
                 isPortfolioOnViewPort={isPortfolioOnViewPort}
             />
-            <div className='header__content'>
-                <p className='header__title '>Welcome, I am</p>
-                <h1 className='header__title'> Eduard Loktev</h1>
-                <p className='header__title'>Full Stack Web Developer.</p>
+            <div className='header__content-wrapper'>
+                <div className='header__content'>
+                    <p className='header__title '>Welcome, I am</p>
+                    <h1 className='header__title'> Eduard Loktev</h1>
+                    <p className='header__title'>Full Stack Web Developer.</p>
+                </div>
+                <q className='header__subtitle'>A journey of a thousand miles begins with a single step</q>
             </div>
-            <q className='header__subtitle'>A journey of a thousand miles begins with a single step</q>
-
             <Video src={videoSrc} />
             <div className='header__links'>
                 <a href='mailto:eduard08@walla.com' className='header__link header__link_type_email' target="_blank"></a>
@@ -53,7 +54,7 @@ export function Header({
 
             </div>
 
-        </header>
+        </header >
 
     )
 }

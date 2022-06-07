@@ -36,7 +36,11 @@ function App() {
       {!isLoading ?
 
         <div ref={main} onLoad={() => { main.current.classList.add('main_is-visible') }} className='main'>
-          <IronMan text={messageText} setText={setMessageText} />
+          <IronMan
+            text={messageText}
+            setText={setMessageText}
+
+          />
           <ParcticleBackground />
 
           <Header

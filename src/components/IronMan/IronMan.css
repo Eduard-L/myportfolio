@@ -13,8 +13,7 @@
     /* margin: 0px auto; */
     bottom: 7%;
     cursor: pointer;
-    left: 3%;
-    /* right: 5%; */
+    left: 2%;
     transform: translate(-1000px, 0);
     transition: all 2s ease;
     animation: 2s flying linear infinite , moving 2s linear 1 ;
@@ -39,7 +38,7 @@
         transform: translate(0,0);
     }
     50%{
-        transform: translate(0,30px);
+        transform: translate(0,20px);
     }
     100%{
         transform: translate(0,0);
@@ -61,21 +60,33 @@
     background-color: tomato;
     box-shadow: 4px 4px 12px 0px rgba(255, 61, 0, 0.5);
     font-family: 'Inter', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
+    opacity: 1;
+     pointer-events: all;
+     visibility: visible;
    
  }
  
  .ironman_show-contact{
-     right: 50px;
-     left: inherit;
+     left: calc(100% - 128px);
      
  }
  .ironman__subtitle_type_show-contact{
      left:-200px;
  }
+ .ironman__button_type_reset-is-diabled{
+     pointer-events: none;
+     cursor: none;
+     opacity: 0.3;
+     background-color: grey;
+ }
  .ironman_close{
-     left: 0;
-     right:3%
+     left: 2%;
+ }
+ .ironman__subtitle_not-visble{
+     opacity: 0;
+     pointer-events: none;
+     visibility: hidden;
  }
  
  .ironman__link{
@@ -84,6 +95,7 @@
      position: absolute;
  }
  .ironman__button{
+    border: none;
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
@@ -97,14 +109,44 @@
     cursor: pointer;
  }
  .ironman__button_type_close{
-     bottom: -20px;
+     bottom: -25px;
      left: 5px;
      background-image: url('../../images/icons8-close-16.png');
      
  }
  .ironman__button_type_reset{
-    bottom: -20px;
+    bottom: -25px;
     right: 8px;
     background-image: url('../../images/icons8-refresh-16.png');
     
+}
+@media screen and (max-width:1000px) {
+    .ironman__subtitle{
+        left:63px;
+        top:50%
+    }
+}
+@media screen and (max-width:550px) {
+    .ironman{
+        width: 54px;
+        height: 90px;
+    }
+    .ironman__button_type_close{
+        left: 0px;
+    }
+    .ironman__button_type_reset{
+        right: 2px;
+    }
+    .ironman__subtitle{
+        width: 170px;
+        height: 35px;
+        font-size: 10px;
+        left: 53px;
+    }
+    .ironman__subtitle_type_show-contact{
+        left: -166px;
+    }
+    .ironman_show-contact{
+        left:calc(100% - 110px)
+    }
 }

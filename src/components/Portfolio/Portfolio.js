@@ -8,7 +8,7 @@ export function Portfolio({ isOnViewPort, setIsOnViewPort }) {
     const portfolio = useRef();
 
     const { isVisible } = useIsInVeiwPort(portfolio);
-    const [isButtonIsVisible, setIsButtonIsVisible] = useState({ preBtn: true, nexBtn: true })
+    // const [isButtonIsVisible, setIsButtonIsVisible] = useState({ preBtn: true, nexBtn: true })
     const [scrollPosition, setScrollPosition] = useState(0)
     useEffect(() => {
         setIsOnViewPort(isVisible);
