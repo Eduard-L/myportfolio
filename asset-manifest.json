@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.1fe2d9f3.css",
-    "main.js": "/myportfolio/static/js/main.c0e342e6.js",
+    "main.css": "/myportfolio/static/css/main.90f0661f.css",
+    "main.js": "/myportfolio/static/js/main.c8b91d27.js",
     "static/js/937.8fd9669c.chunk.js": "/myportfolio/static/js/937.8fd9669c.chunk.js",
     "static/js/787.1f11dfe9.chunk.js": "/myportfolio/static/js/787.1f11dfe9.chunk.js",
-    "static/media/video2.mp4": "/myportfolio/static/media/video2.316e5dcdaf28202c747e.mp4",
     "static/media/footervideo.mp4": "/myportfolio/static/media/footervideo.17877b94b79b7d7de87f.mp4",
+    "static/media/video2.mp4": "/myportfolio/static/media/video2.29b841426c6055ad5b74.mp4",
     "static/media/image-searcher.jpg": "/myportfolio/static/media/image-searcher.ed5be1d41dc4beddbe47.jpg",
     "static/media/news-project.jpg": "/myportfolio/static/media/news-project.bab9c4fba621ed6feb0e.jpg",
     "static/media/news-explorer2.jpg": "/myportfolio/static/media/news-explorer2.6f29e414e078e156c658.jpg",
@@ -32,13 +32,13 @@
     "static/media/roboto-900.woff2": "/myportfolio/static/media/roboto-900.870c8c1486f76054301a.woff2",
     "static/media/around-us2.jpg": "/myportfolio/static/media/around-us2.9f093be090215e34b9c2.jpg",
     "index.html": "/myportfolio/index.html",
-    "main.1fe2d9f3.css.map": "/myportfolio/static/css/main.1fe2d9f3.css.map",
-    "main.c0e342e6.js.map": "/myportfolio/static/js/main.c0e342e6.js.map",
+    "main.90f0661f.css.map": "/myportfolio/static/css/main.90f0661f.css.map",
+    "main.c8b91d27.js.map": "/myportfolio/static/js/main.c8b91d27.js.map",
     "937.8fd9669c.chunk.js.map": "/myportfolio/static/js/937.8fd9669c.chunk.js.map",
     "787.1f11dfe9.chunk.js.map": "/myportfolio/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fe2d9f3.css",
-    "static/js/main.c0e342e6.js"
+    "static/css/main.90f0661f.css",
+    "static/js/main.c8b91d27.js"
   ]
 }
