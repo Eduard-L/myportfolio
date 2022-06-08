@@ -34,6 +34,9 @@ export function IronMan({ text, setText }) {
             return
         }
         setMessageCounter(messageCounter + 1)
+        if (messageCounter === -1) {
+            setText('We can make it all day!')
+        }
         if (messageCounter === 3) {
             handleIronManShowContact();
         }
@@ -97,7 +100,7 @@ export function IronMan({ text, setText }) {
     }
 
     function handleResetIronMan() {
-        setMessageCounter(0)
+        setMessageCounter(-1)
         ironMan.current.classList.remove(`ironman_show-contact`);
         ironMan.current.classList.remove(`ironman_close`);
         ironText.current.classList.remove('ironman__subtitle_type_show-contact');
