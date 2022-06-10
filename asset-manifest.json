@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.36593c85.css",
-    "main.js": "/static/js/main.2bb9c0a7.js",
+    "main.css": "/static/css/main.95bdf7ac.css",
+    "main.js": "/static/js/main.8a1c072d.js",
     "static/js/937.8fd9669c.chunk.js": "/static/js/937.8fd9669c.chunk.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/footervideo.mp4": "/static/media/footervideo.17877b94b79b7d7de87f.mp4",
@@ -10,12 +10,15 @@
     "static/media/news-project.jpg": "/static/media/news-project.bab9c4fba621ed6feb0e.jpg",
     "static/media/news-explorer2.jpg": "/static/media/news-explorer2.6f29e414e078e156c658.jpg",
     "static/media/Around-us.jpg": "/static/media/Around-us.19042cd2bdd2a5adefa6.jpg",
+    "static/media/Inconsolata-Bold.woff": "/static/media/Inconsolata-Bold.368bc777194869637c0a.woff",
     "static/media/HomeLand.jpg": "/static/media/HomeLand.cbf15411aee89f9f68fc.jpg",
     "static/media/Bangers-Regular.woff": "/static/media/Bangers-Regular.6dff0ca7d328846ffa3c.woff",
     "static/media/DancingScript-Regular.woff": "/static/media/DancingScript-Regular.41a1bff98d3b3b3e5721.woff",
     "static/media/portland.jpg": "/static/media/portland.a24ea7286a9ed3dd34ba.jpg",
+    "static/media/PressStart2P-Regular.woff": "/static/media/PressStart2P-Regular.d98fe95ff3814170f5d1.woff",
     "static/media/image-searcher2.jpg": "/static/media/image-searcher2.27414b6ad673b4f4d5ac.jpg",
     "static/media/Creepster-Regular.woff": "/static/media/Creepster-Regular.60995db2feaec09ee2bc.woff",
+    "static/media/TitilliumWeb-Bold.woff": "/static/media/TitilliumWeb-Bold.ca6c0328c3ee16d1043d.woff",
     "static/media/my_image.jpg": "/static/media/my_image.9ac739271b916d9769e5.jpg",
     "static/media/roboto-slab-700.woff": "/static/media/roboto-slab-700.7cb09bef6990e87c9e2b.woff",
     "static/media/inter-400-regular.woff": "/static/media/inter-400-regular.f60fc6e27a1216af5719.woff",
@@ -32,13 +35,13 @@
     "static/media/roboto-900.woff2": "/static/media/roboto-900.870c8c1486f76054301a.woff2",
     "static/media/around-us2.jpg": "/static/media/around-us2.9f093be090215e34b9c2.jpg",
     "index.html": "/index.html",
-    "main.36593c85.css.map": "/static/css/main.36593c85.css.map",
-    "main.2bb9c0a7.js.map": "/static/js/main.2bb9c0a7.js.map",
+    "main.95bdf7ac.css.map": "/static/css/main.95bdf7ac.css.map",
+    "main.8a1c072d.js.map": "/static/js/main.8a1c072d.js.map",
     "937.8fd9669c.chunk.js.map": "/static/js/937.8fd9669c.chunk.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36593c85.css",
-    "static/js/main.2bb9c0a7.js"
+    "static/css/main.95bdf7ac.css",
+    "static/js/main.8a1c072d.js"
   ]
 }
