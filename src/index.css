@@ -32,10 +32,12 @@ body::-webkit-scrollbar-thumb{
   
 }
 .main{
-  display: none;
+  opacity: 0;
+  transition: opacity 3s ease-in;
 }
 .main_is-visible{
   display: flex;
   flex-direction: column;
+  opacity: 1;
 }
 

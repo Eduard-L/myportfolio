@@ -25,13 +25,14 @@ function App() {
   const container = useRef()
 
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 12000)
+    setTimeout(() => setIsLoading(false), 7000)
   }, [])
+
+
   const main = useRef()
 
   // useScrollSnap({ ref: main, duration: 50, delay: 30 });
   return (
-
     <div ref={container} className="App snaps-inline">
       {!isLoading ?
 
@@ -58,9 +59,8 @@ function App() {
           <Portfolio setIsOnViewPort={setIsPortfolioOnViewPort} />
           <Contact setIsOnViewPort={setIsContactOnViewPort} />
           <Footer />
-
-
         </div>
+
         : <PreLoader />
 
 
@@ -68,6 +68,7 @@ function App() {
 
 
     </div>
+
 
   )
 }

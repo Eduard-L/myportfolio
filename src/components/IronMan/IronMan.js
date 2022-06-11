@@ -10,7 +10,7 @@ export function IronMan({ text, setText }) {
 
     useEffect(() => {
         setText('Click on me')
-        setTimeout(() => { setIsIronManActivate(true) }, 18000)
+        setTimeout(() => { setIsIronManActivate(true) }, 9000)
 
     }, [])
 

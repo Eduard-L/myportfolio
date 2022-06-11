@@ -1,13 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 
-export const useIsInVeiwPort = (element) => {
+
+
+
+export const useIsInVeiwPort = (element, percentOfTheScreen) => {
     const [isVisible, setIsVisible] = useState(false);
 
     const options = useMemo(() => {
         return {
             root: null,
             rootMargin: '0px',
-            threshold: 0.5
+            threshold: percentOfTheScreen
         }
     }, [])
     function handleObserverCallBack(entries) {

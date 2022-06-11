@@ -17,7 +17,7 @@
     transform: translate(-1000px, 0);
     transition: all 2s ease;
     animation: 2s flying linear infinite , moving 2s linear 1 ;
-    animation-delay: 15s;
+    animation-delay: 9s;
     
     
 }
@@ -125,6 +125,9 @@
         left:63px;
         top:50%
     }
+    .ironman__subtitle_type_show-contact{
+        left: -207px;
+    }
 }
 @media screen and (max-width:550px) {
     .ironman{
@@ -148,5 +151,8 @@
     }
     .ironman_show-contact{
         left:calc(100% - 110px)
+    }
+    .ironman_close{
+        left:2%
     }
 }

@@ -3,8 +3,8 @@ import './Header.css'
 import videoSrc from '../../videos/video2.mp4'
 import { Navigation } from '../Navigation/Navigation'
 import { useIsInVeiwPort } from '../../utils/useIsInViewPort'
-import { useRef } from 'react'
-import { useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
+import songSrc from '../../music/superherosong.mp3'
 
 export function Header({
     isOpen,
@@ -18,15 +18,39 @@ export function Header({
 }) {
 
     const header = useRef()
-    const { isVisible } = useIsInVeiwPort(header)
-
+    const { isVisible } = useIsInVeiwPort(header, 0.5)
+    const [isSongPlaying, setIsSongPlaying] = useState(false);
+    const [audio, setAudio] = useState(new Audio(`${songSrc}`));
+    audio.setAttribute('loop', true);
+    console.log(audio)
+    const musicControlBtn = useRef();
     useEffect(() => {
         setIsOnViewPort(isVisible)
 
-    }, [isVisible])
+    }, [isVisible]);
+
+    useEffect(() => {
+        function handlePlaySong() {
+            audio.play();
+
+        }
+        function hanldeStopPlayingSong() {
+            audio.pause();
+
+        }
+
+        if (isSongPlaying) {
+            handlePlaySong()
+        }
+        else {
+            hanldeStopPlayingSong()
+        }
+
+    }, [isSongPlaying])
 
     return (
         <header ref={header} id='header' className='header'>
+            <button ref={musicControlBtn} onClick={() => { setIsSongPlaying(!isSongPlaying) }} type='button' className={`header__music-btn ${isSongPlaying && 'header__music-btn_is-playing'}`}></button>
             <Navigation
                 isOpen={isOpen}
                 setIsBurgerMenuOpen={setIsBurgerMenuOpen}
@@ -47,7 +71,7 @@ export function Header({
             <Video src={videoSrc} />
             <div className='header__links'>
                 <a href='mailto:eduard08@walla.com' className='header__link header__link_type_email' target="_blank"></a>
-                <a href='https://drive.google.com/file/d/1MZqx6depC_NdZN81BhuiXKWtue4RqHdC/view?usp=sharing' className='header__link header__link_type_cv' target="_blank"></a>
+                <a href='https://drive.google.com/file/d/1_lvI-MHIGIXsSaz6amuABPgSGbN4TcsS/view?usp=sharing' className='header__link header__link_type_cv' target="_blank"></a>
                 <a href='https://github.com/Eduard-L' className='header__link header__link_type_github' target="_blank"></a>
                 <a href='https://linkedin.com/in/eduard-loktev' className='header__link header__link_type_linkedin' target="_blank"></a>
                 <a href="https://wa.me/+972505651505" className='header__link header__link_type_whatsapp' target="_blank"></a>
