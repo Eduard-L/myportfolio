@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.95bdf7ac.css",
-    "main.js": "/static/js/main.8a1c072d.js",
+    "main.css": "/static/css/main.5eee70b6.css",
+    "main.js": "/static/js/main.f3c48173.js",
     "static/js/937.8fd9669c.chunk.js": "/static/js/937.8fd9669c.chunk.js",
     "static/js/787.1f11dfe9.chunk.js": "/static/js/787.1f11dfe9.chunk.js",
     "static/media/footervideo.mp4": "/static/media/footervideo.17877b94b79b7d7de87f.mp4",
     "static/media/video2.mp4": "/static/media/video2.29b841426c6055ad5b74.mp4",
+    "static/media/superherosong.mp3": "/static/media/superherosong.bac8c06d2e37826c325d.mp3",
     "static/media/image-searcher.jpg": "/static/media/image-searcher.ed5be1d41dc4beddbe47.jpg",
     "static/media/news-project.jpg": "/static/media/news-project.bab9c4fba621ed6feb0e.jpg",
     "static/media/news-explorer2.jpg": "/static/media/news-explorer2.6f29e414e078e156c658.jpg",
@@ -35,13 +36,13 @@
     "static/media/roboto-900.woff2": "/static/media/roboto-900.870c8c1486f76054301a.woff2",
     "static/media/around-us2.jpg": "/static/media/around-us2.9f093be090215e34b9c2.jpg",
     "index.html": "/index.html",
-    "main.95bdf7ac.css.map": "/static/css/main.95bdf7ac.css.map",
-    "main.8a1c072d.js.map": "/static/js/main.8a1c072d.js.map",
+    "main.5eee70b6.css.map": "/static/css/main.5eee70b6.css.map",
+    "main.f3c48173.js.map": "/static/js/main.f3c48173.js.map",
     "937.8fd9669c.chunk.js.map": "/static/js/937.8fd9669c.chunk.js.map",
     "787.1f11dfe9.chunk.js.map": "/static/js/787.1f11dfe9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.95bdf7ac.css",
-    "static/js/main.8a1c072d.js"
+    "static/css/main.5eee70b6.css",
+    "static/js/main.f3c48173.js"
   ]
 }
