@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     background: linear-gradient(0deg, rgba(249,120,98,0.49653364763874297) 0%, rgba(0,0,0,0.19681375968356096) 10%, rgba(0,0,0,0.19961488013174022) 90%, rgba(249,120,98,0.5049370089832808) 100%);
-    /* opacity: 0; */
+ 
     transition: opacity .5s ease, transform .5s ease;
    
 }
@@ -21,7 +21,7 @@
     z-index: 1;
 }
 .animation-wrapper_animatied{
-    animation: showContent 1s linear;
+    animation: showContent .5s linear;
     animation-fill-mode: forwards;
 }
 @keyframes showContent {

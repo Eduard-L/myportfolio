@@ -45,6 +45,7 @@
     text-align: center;
     line-height: 150%;
     position: relative;
+    border-radius: 20px;
 }
 .contact__subtitle::before{
     content: '';

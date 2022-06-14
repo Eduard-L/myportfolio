@@ -22,7 +22,7 @@ export function Header({
     const [isSongPlaying, setIsSongPlaying] = useState(false);
     const [audio, setAudio] = useState(new Audio(`${songSrc}`));
     audio.setAttribute('loop', true);
-    console.log(audio)
+
     const musicControlBtn = useRef();
     useEffect(() => {
         setIsOnViewPort(isVisible)
