@@ -51,8 +51,8 @@ export function Portfolio({ isOnViewPort, setIsOnViewPort }) {
                 <h2 className='portfolio__title'>Portfolio</h2>
                 <ul ref={container} className='portfolio__list snaps-inline'>
                     <li><button onClick={handleScrollBack} ref={preBtn} type='button' className={`portfolio__btn portfolio__btn_type_pre ${scrollPosition <= 200 && 'portfolio__btn_not-visible'} `}></button></li>
-                    <PortfolioCard titleText='News Explorer' subtitleText='Find the latest news!' type='news-explorer' codeLink='#' projectLink='https://news-searcher.students.nomoreparties.sbs/' />
-                    <PortfolioCard titleText='Around Us' subtitleText='Make your own profile!' type='around-us' codeLink='#' projectLink='https://spartan.students.nomoreparties.sbs/signin' />
+                    <PortfolioCard titleText='News Explorer' subtitleText='Find the latest news!' type='news-explorer' codeLink='#' projectLink='https://news-searcher.students.nomoredomainssbs.ru/' />
+                    <PortfolioCard titleText='Around Us' subtitleText='Make your own profile!' type='around-us' codeLink='#' projectLink='https://around-us.students.nomoredomainssbs.ru' />
                     <PortfolioCard titleText='Image Searcher' subtitleText='Find you image!' type='image-searcher' codeLink='#' projectLink='https://eduard-l.github.io/react-image-searcher/' />
                     <PortfolioCard btnTextCode='PortLand Code' btnTextProject='PortLand Link' titleText='HomeLand/PortLand' subtitleText='Choose your journey!' type='HomeLand' codeLink="https://github.com/Eduard-L/web_project_3" projectLink='https://eduard-l.github.io/web_project_3/' >
                         <button type='button' className='portfolio__link-btn'>
