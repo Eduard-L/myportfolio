@@ -30,7 +30,7 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  grid-gap: 60px;
+  grid-gap: 40px;
   width: 70vw;
   overscroll-behavior-inline: contain;
   -webkit-overflow-scrolling: touch;
@@ -61,6 +61,7 @@
   justify-content: center;
   box-shadow: 0px 0px 10px 5px tomato;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 .portfolio__item::before {
@@ -294,8 +295,9 @@
   }
   .portfolio__item {
     margin-left: 10px;
-    width: 290px;
-    height: 280px;
+    width: 280px;
+    height: 270px;
+    margin-right: 10px;
   }
 
   .portfolio__list {
