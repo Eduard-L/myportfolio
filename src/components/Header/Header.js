@@ -71,7 +71,7 @@ export function Header({
             <Video src={videoSrc} />
             <div className='header__links'>
                 <a href='mailto:eduard08@walla.com' className='header__link header__link_type_email' target="_blank"></a>
-                <a href='https://drive.google.com/file/d/1_lvI-MHIGIXsSaz6amuABPgSGbN4TcsS/view?usp=sharing' className='header__link header__link_type_cv' target="_blank"></a>
+                <a href='https://drive.google.com/file/d/1nLVwiDjOSWjApY4Nz5O_UZfqhiu81xvl/view?usp=share_link' className='header__link header__link_type_cv' target="_blank"></a>
                 <a href='https://github.com/Eduard-L' className='header__link header__link_type_github' target="_blank"></a>
                 <a href='https://linkedin.com/in/eduard-loktev' className='header__link header__link_type_linkedin' target="_blank"></a>
                 <a href="https://wa.me/+972505651505" className='header__link header__link_type_whatsapp' target="_blank"></a>

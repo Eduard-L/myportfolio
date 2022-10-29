@@ -14,7 +14,7 @@ import { Footer } from '../Footer/Footer';
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(false)
   const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false)
   const [messageText, setMessageText] = useState('')
   const [isHeaderOnViewPort, setIsHeaderOnViewPort] = useState(false)
@@ -24,9 +24,9 @@ function App() {
   const [isContactOnViewPort, setIsContactOnViewPort] = useState(false)
   const container = useRef()
 
-  useEffect(() => {
-    setTimeout(() => setIsLoading(false), 7000)
-  }, [])
+  // useEffect(() => {
+  //   setTimeout(() => setIsLoading(false), 7000)
+  // }, [])
 
 
   const main = useRef()
