@@ -5,6 +5,7 @@ import { useIsInVeiwPort } from '../../utils/useIsInViewPort';
 import aroundUsGif from '../../gifs/around-us.gif'
 import newsExplorer from '../../gifs/news-explorer.gif'
 import imageSeracher from '../../gifs/image-searcher.gif'
+import taskManager from '../../gifs/task-manager.gif'
 export function Portfolio({ isOnViewPort, setIsOnViewPort }) {
     const preBtn = useRef();
     const container = useRef();
@@ -66,17 +67,18 @@ export function Portfolio({ isOnViewPort, setIsOnViewPort }) {
                         <li><button onClick={handleScrollBack} ref={preBtn} type='button' className={`portfolio__btn portfolio__btn_type_pre  `}></button></li>
                     }
 
-                    <PortfolioCard imgSrc={newsExplorer} titleText='News Explorer' subtitleText='Find the latest news!' type='news-explorer' codeLink='https://github.com/Eduard-L/news-explorer-frontend' projectLink='https://news-searcher.students.nomoredomainssbs.ru/' />
-                    <PortfolioCard imgSrc={aroundUsGif} titleText='Around Us' subtitleText='Make your own profile!' type='around-us' codeLink='https://github.com/Eduard-L/react-around-api-full' projectLink='https://around-us.students.nomoredomainssbs.ru' />
-                    <PortfolioCard imgSrc={imageSeracher} titleText='Image Searcher' subtitleText='Find you image!' type='image-searcher' codeLink='https://github.com/Eduard-L/react-image-searcher' projectLink='https://eduard-l.github.io/react-image-searcher/' />
-                    <PortfolioCard btnTextCode='PortLand Code' btnTextProject='PortLand Link' titleText='HomeLand/PortLand' subtitleText='Choose your journey!' type='HomeLand' codeLink="https://github.com/Eduard-L/web_project_3" projectLink='https://eduard-l.github.io/web_project_3/' >
+                    <PortfolioCard videoLink='https://youtu.be/121Wb_0YgG8' imgSrc={newsExplorer} titleText='News Explorer' subtitleText='Find the latest news!' type='news-explorer' codeLink='https://github.com/Eduard-L/news-explorer-frontend' projectLink='https://news-searcher.students.nomoredomainssbs.ru/' />
+                    <PortfolioCard videoLink='https://youtu.be/ycrizddf8AE' imgSrc={taskManager} titleText='Task Manager' subtitleText='Plan Your Time!' type='task-manager' codeLink='https://github.com/Eduard-L/dnd-todo' projectLink='https://task-manager.mooo.com' />
+                    <PortfolioCard videoLink='https://youtu.be/_JoYSOKKe18' imgSrc={aroundUsGif} titleText='Around Us' subtitleText='Make your own profile!' type='around-us' codeLink='https://github.com/Eduard-L/react-around-api-full' projectLink='https://around-us.students.nomoredomainssbs.ru' />
+                    <PortfolioCard videoLink='https://youtu.be/1fXKQoof908' imgSrc={imageSeracher} titleText='Image Searcher' subtitleText='Find you image!' type='image-searcher' codeLink='https://github.com/Eduard-L/react-image-searcher' projectLink='https://eduard-l.github.io/react-image-searcher/' />
+                    {/* <PortfolioCard btnTextCode='PortLand Code' btnTextProject='PortLand Link' titleText='HomeLand/PortLand' subtitleText='Choose your journey!' type='HomeLand' codeLink="https://github.com/Eduard-L/web_project_3" projectLink='https://eduard-l.github.io/web_project_3/' >
                         <button type='button' className='portfolio__link-btn'>
                             <a href='https://eduard-l.github.io/web__project3_second-version/' className='portfolio__link' target='_blank'>HomeLand Link</a>
                         </button>
                         <button type='button' className='portfolio__link-btn'>
                             <a href="https://github.com/Eduard-L/web__project3_second-version" className='portfolio__link' target='_blank'>HomeLand Code</a>
                         </button>
-                    </PortfolioCard>
+                    </PortfolioCard> */}
                     {
                         (scrollPosition < 800) && window.innerWidth > 700 &&
                         <li><button onClick={handleScrollForward} type='button' className={`portfolio__btn portfolio__btn_type_next `}></button></li>

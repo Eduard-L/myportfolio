@@ -77,6 +77,7 @@
   transition: opacity 0.3s ease;
   border-radius: 10px;
 }
+
 .portfolio__item:hover::before {
   opacity: 0.8;
 }
@@ -92,6 +93,9 @@
 } */
 .portfolio__item_type_news-explorer:hover {
   background-image: url("../../images/news-explorer2.jpg");
+}
+.portfolio__item_type_task-manager:hover {
+  background-image: url("../../images/task-manage-overlay.png");
 }
 /* .portfolio__item_type_around-us {
   background-image: url("../../gifs/around-us.gif");

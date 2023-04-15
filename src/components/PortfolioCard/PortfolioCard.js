@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export function PortfolioCard({ btnTextCode, btnTextProject, titleText, subtitleText, type, codeLink, projectLink, children, imgSrc }) {
+export function PortfolioCard({ btnTextCode, btnTextProject, titleText, subtitleText, type, codeLink, projectLink, children, imgSrc, videoLink }) {
 
     const [isHover, setIsHover] = useState(false)
 
@@ -21,6 +21,9 @@ export function PortfolioCard({ btnTextCode, btnTextProject, titleText, subtitle
                             </button>
                             <button type='button' className='portfolio__link-btn'>
                                 <a href={codeLink} target="_blankcd " className='portfolio__link'>{btnTextCode || 'GitHub'}</a>
+                            </button>
+                            <button type='button' className='portfolio__link-btn'>
+                                <a href={videoLink} target="_blankcd " className='portfolio__link'>{btnTextCode || 'Video'}</a>
                             </button>
                             {
                                 children
